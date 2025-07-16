@@ -4,6 +4,8 @@
 3. 확인하기
    > /etc/letsencrypt/live/tomhoon.my/fullchain.pem
    > /etc/letsencrypt/live/tomhoon.my/privkey.pem
+  
+---
 
 
 ### 2. copy certs
@@ -20,10 +22,21 @@
 - docker build -t default-nginx-image .
 
 
+---
+
+
 ### 4. make & run docker container 
+
+---
+
+
 ### 5. docker nginx -> docker spring boot를 위해 아래 설정이 필요
    > 네트워크 묶기
    > 도커 컨테이너 사설 Ip를 default.conf에 설정
+
+
+---
+
 
    
 - docker run -d -p 980:80 -p 443:443 --network chatting-network --name default-nginx-container default-nginx-image
