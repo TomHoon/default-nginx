@@ -1,4 +1,4 @@
-###1 MAC 기준 CERT 생성
+### 1. MAC 기준 CERT 생성
 1. brew install certbot
 2. sudo certbot certonly --standalone -d tomhoon.my
 3. 확인하기
@@ -6,7 +6,7 @@
    > /etc/letsencrypt/live/tomhoon.my/privkey.pem
 
 
-###2 copy certs
+### 2. copy certs
 #### 서버에 있는 certs를 docker로 옮김
 #### 이미지 생성 전 메뉴얼로 쳐줘야함
 #### 이미 있다면 안해도됨
@@ -16,12 +16,12 @@
 ---
 
 
-###3 make image
+### 3. make image
 - docker build -t default-nginx-image .
 
 
-###4 make & run docker container 
-###5 docker nginx -> docker spring boot를 위해 아래 설정이 필요
+### 4. make & run docker container 
+### 5. docker nginx -> docker spring boot를 위해 아래 설정이 필요
    > 네트워크 묶기
    > 도커 컨테이너 사설 Ip를 default.conf에 설정
 
