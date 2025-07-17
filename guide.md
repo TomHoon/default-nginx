@@ -1,3 +1,7 @@
+### 0. 사전내용
+1. Docker 내부라 private ip로 바인딩
+2. 주의)Spring Boot내에 Cors처리 되면 Cors가 난다.
+
 ### 1. MAC 기준 CERT 생성
 1. brew install certbot
 2. sudo certbot certonly --standalone -d tomhoon.my
