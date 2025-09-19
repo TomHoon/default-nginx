@@ -23,7 +23,7 @@
 
 
 ### 3. make image
-- docker build -t default-nginx-image .
+- sudo docker build -t default-nginx-image .
 
 
 ---
@@ -43,4 +43,4 @@
 
 
    
-- docker run -d -p 980:80 -p 443:443 --network chatting-network --name default-nginx-container default-nginx-image
+- docker run -d -p 580:80 -p 443:443 --network chatting-network --name default-nginx-container default-nginx-image
