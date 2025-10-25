@@ -5,6 +5,8 @@
 ### 1. MAC 기준 CERT 생성
 1. brew install certbot
 2. sudo certbot certonly --standalone -d tomhoon.my
+2. sudo certbot certonly --standalone -d www.yjw7003.info
+
 3. 확인하기
    > /etc/letsencrypt/live/tomhoon.my/fullchain.pem
    > /etc/letsencrypt/live/tomhoon.my/privkey.pem
@@ -16,7 +18,13 @@
 #### 서버에 있는 certs를 docker로 옮김
 #### 이미지 생성 전 메뉴얼로 쳐줘야함
 #### 이미 있다면 안해도됨
-- cp /etc/letsencrypt/live/tomhoon.my/*.pem ./certs/
+#### supervisor로 해야함
+
+- sudo su -
+
+- cp /etc/letsencrypt/live/tomhoon.my/*.pem ./tomhoon-certs/
+- cp /etc/letsencrypt/live/www.yjw7003.info/*.pem ./yjw7003-certs/
+- cp /etc/letsencrypt/live/daewoo.digital/*.pem ./daewoo-certs/
 
 
 ---
@@ -43,4 +51,4 @@
 
 
    
-- docker run -d -p 580:80 -p 443:443 --network chatting-network --name default-nginx-container default-nginx-image
+- docker run -d -p 80:80 -p 443:443 --network chatting-network --name default-nginx-container default-nginx-image
