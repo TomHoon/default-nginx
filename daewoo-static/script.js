@@ -58,11 +58,12 @@ canvas.style.height = "200px";
 canvas.style.width = "100%";
 resizeCanvas();
 
-let lastHeight = window.innerHeight;
+let lastWidth = window.innerWidth;
+
 window.addEventListener("resize", () => {
-  const diff = Math.abs(window.innerHeight - lastHeight);
+  const diff = Math.abs(window.innerWidth - lastWidth);
   if (diff < 100) return;
-  lastHeight = window.innerHeight;
+  lastWidth = window.innerWidth;
   resizeCanvas();
   resizeCanvas();
 });

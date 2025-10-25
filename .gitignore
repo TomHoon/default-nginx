@@ -1,5 +1,6 @@
 daewoo-certs/*.pem
 tomhoon-certs/*.pem
 yjw7003-certs/*.pem
+unies-certs/*.pem
 yjw7003-certs-nowww/*.pem
-daewoo-static/
+daewoo-static/*

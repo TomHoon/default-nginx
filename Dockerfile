@@ -11,6 +11,7 @@ COPY tomhoon-certs /etc/nginx/tomhoon-certs
 COPY yjw7003-certs /etc/nginx/yjw7003-certs
 COPY yjw7003-certs-nowww /etc/nginx/yjw7003-certs-nowww
 COPY daewoo-certs /etc/nginx/daewoo-certs
+COPY unies-certs /etc/nginx/unies-certs
 
 # EXPOSE 80
 
