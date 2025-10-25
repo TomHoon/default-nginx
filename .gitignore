@@ -2,3 +2,4 @@ daewoo-certs/*.pem
 tomhoon-certs/*.pem
 yjw7003-certs/*.pem
 yjw7003-certs-nowww/*.pem
+daewoo-static/
